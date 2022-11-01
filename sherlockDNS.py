@@ -108,13 +108,7 @@ def save(results):
                 with open(output_F, "a") as saved2:
                         for res in results:
                                 saved2.write(res + "\n")
-
-"""
-        if args.vhost:
-                with open(output_F, "a") as saved3:
-                        for res in results:
-                                saved3.write(res + "\n")
-"""
+                                                            
 
 #Silent Banner(Optional)
 def printx(text):
