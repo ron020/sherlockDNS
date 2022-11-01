@@ -7,6 +7,21 @@ import sys
 from bs4 import BeautifulSoup
 
 
+#Banner
+def banner():
+        printx ("   _____ __              __           __   ____  _   _______ ")
+        printx ("  / ___// /_  ___  _____/ /___  _____/ /__/ __ \/ | / / ___/ ")
+        printx ("  \__ \/ __ \/ _ \/ ___/ / __ \/ ___/ //_/ / / /  |/ /\__ \  ")
+        printx (" ___/ / / / /  __/ /  / / /_/ / /__/ ,< / /_/ / /|  /___/ /  ")
+        printx ("/____/_/ /_/\___/_/  /_/\____/\___/_/|_/_____/_/ |_//____/   ")
+        printx ("                                             version 1.0     ")
+        printx ("Developed by ron020")
+        printx ("Github: https://github.com/ron020")
+        printx ("usage: sherlockDNS.py [-h HELP] [-d DOMAIN] [-dL LIST] [-vh VHOST]")
+        printx ("                     [-w WORDLIST] [-s SILENT] [-o OUTPUT]")
+        printx (" ")
+
+
 #Arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("-d","--domain", help="Domains to find subdomains for")
@@ -33,19 +48,7 @@ size = args.size
 lineS = args.linefilter
 words = args.words
 
-#Banner
-def banner():
-        printx ("   _____ __              __           __   ____  _   _______ ")
-        printx ("  / ___// /_  ___  _____/ /___  _____/ /__/ __ \/ | / / ___/ ")
-        printx ("  \__ \/ __ \/ _ \/ ___/ / __ \/ ___/ //_/ / / /  |/ /\__ \  ")
-        printx (" ___/ / / / /  __/ /  / / /_/ / /__/ ,< / /_/ / /|  /___/ /  ")
-        printx ("/____/_/ /_/\___/_/  /_/\____/\___/_/|_/_____/_/ |_//____/   ")
-        printx ("                                             version 1.0     ")
-        printx ("Developed by ron020")
-        printx ("Github: https://github.com/ron020")
-        printx ("usage: sherlockDNS.py [-h HELP] [-d DOMAIN] [-dL LIST] [-vh VHOST]")
-        printx ("                     [-w WORDLIST] [-s SILENT] [-o OUTPUT]")
-        printx (" ")
+
 
 #Gethostbyname
 def test_sub(host):
